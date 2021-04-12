@@ -37,7 +37,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
         <Resizable direction="vertical">
             <div style={{ height: "calc(100% - 10px)", display: "flex", flexDirection: "row" }}>
                 <Resizable direction="horizontal">
-                    <CodeEditor onChange={(value) => updateCell(cell.id, value)} initialValue="const a = 1" />
+                    <CodeEditor onChange={(value) => updateCell(cell.id, value)} initialValue={cell.content} />
                 </Resizable>
                 {/* <textarea value={input} onChange={(e) => setInput(e.target.value)} /> */}
                 {/* <div><button onClick={onClick}>Submit</button></div> */}
