@@ -1,6 +1,6 @@
 {
     "name": "jseditorbook",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "bin": "dist/index.js",
     "files": [
         "dist"
@@ -17,14 +17,13 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@jseditor/local-client": "^1.1.0"
+        "@jseditorbook/local-client": "^1.1.0"
     },
     "devDependencies": {
-        "@jseditor/local-api": "^1.1.0",
+        "@jseditorbook/local-api": "^1.1.0",
         "@types/node": "^14.14.37",
         "commander": "^7.2.0",
         "esbuild": "0.8.26",
         "typescript": "^4.2.4"
-    },
-    "gitHead": "e87fd92e032e4367a737715455fa133310430851"
+    }
 }

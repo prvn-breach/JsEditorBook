@@ -1,5 +1,5 @@
 {
-	"name": "@jseditor/local-client",
+	"name": "@jseditorbook/local-client",
 	"version": "1.1.0",
 	"files": [
 		"build"
@@ -66,6 +66,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"gitHead": "e87fd92e032e4367a737715455fa133310430851"
+	}
 }
