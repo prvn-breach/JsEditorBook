@@ -1,0 +1,114 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   push: false,
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': '/usr/local/bin/lerna' }
+1 notice cli v3.22.1
+2 verbose rootPath /home/workspace/practise/mern/typescript/jbook
+3 verbose session b71662e9c65732aa
+4 verbose user-agent lerna/3.22.1/node@v10.19.0+x64 (linux)
+5 silly argv { _: [ 'publish' ],
+5 silly argv   push: false,
+5 silly argv   composed: 'publish',
+5 silly argv   lernaVersion: '3.22.1' }
+6 verbose rootPath /home/workspace/practise/mern/typescript/jbook
+7 info current version 2.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "v2.0.0-1-g497ee07" => {"lastTagName":"v2.0.0","lastVersion":"v2.0.0","refCount":"1","sha":"497ee07","isDirty":false}
+15 info Looking for changed packages since v2.0.0
+16 silly checking diff packages/cli
+17 silly found diff in packages/cli/package.json
+18 verbose filtered diff [ 'packages/cli/package.json' ]
+19 silly checking diff packages/local-api
+20 silly found diff in packages/local-api/package.json
+21 verbose filtered diff [ 'packages/local-api/package.json' ]
+22 silly checking diff packages/local-client
+23 silly found diff in packages/local-client/local-api.js
+23 silly found diff in packages/local-client/package.json
+24 verbose filtered diff [ 'packages/local-client/local-api.js',
+24 verbose filtered diff   'packages/local-client/package.json' ]
+25 verbose updated jseditorbook
+26 verbose updated @jseditorbook/local-api
+27 verbose updated @jseditorbook/local-client
+28 verbose git-describe undefined => "v2.0.0-1-g497ee07"
+29 silly git-describe parsed => {"lastTagName":"v2.0.0","lastVersion":"v2.0.0","refCount":"1","sha":"497ee07","isDirty":false}
+30 info execute Skipping git push
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "root", continuing
+33 silly lifecycle No script for "preversion" in "@jseditorbook/local-client", continuing
+34 silly lifecycle No script for "version" in "@jseditorbook/local-client", continuing
+35 silly lifecycle No script for "preversion" in "@jseditorbook/local-api", continuing
+36 silly lifecycle No script for "version" in "@jseditorbook/local-api", continuing
+37 silly lifecycle No script for "preversion" in "jseditorbook", continuing
+38 silly lifecycle No script for "version" in "jseditorbook", continuing
+39 silly lifecycle No script for "version" in "root", continuing
+40 silly gitAdd [ 'packages/local-client/package.json',
+40 silly gitAdd   'packages/local-client/package-lock.json',
+40 silly gitAdd   'packages/local-api/package.json',
+40 silly gitAdd   'packages/local-api/package-lock.json',
+40 silly gitAdd   'packages/cli/package.json',
+40 silly gitAdd   'packages/cli/package-lock.json',
+40 silly gitAdd   'lerna.json' ]
+41 silly gitCommit v2.1.0
+42 verbose git [ 'commit', '-m', 'v2.1.0' ]
+43 silly gitTag v2.1.0
+44 verbose git [ 'tag', 'v2.1.0', '-m', 'v2.1.0' ]
+45 silly lifecycle No script for "postversion" in "jseditorbook", continuing
+46 silly lifecycle No script for "postversion" in "@jseditorbook/local-api", continuing
+47 silly lifecycle No script for "postversion" in "@jseditorbook/local-client", continuing
+48 silly lifecycle No script for "postversion" in "root", continuing
+49 info publish Publishing packages to npm...
+50 info Verifying npm credentials
+51 verbose Retrieving npm user profile
+52 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1488ms
+53 silly npm profile get received {"tfa":false,"name":"prvn_ch","email":"praveenking880@gmail.com","email_verified":true,"created":"2021-04-12T02:31:23.562Z","updated":"2021-04-12T02:31:23.559Z","cidr_whitelist":null}
+54 silly get npm username received {"username":"prvn_ch","tfa":false,"name":"prvn_ch","email":"praveenking880@gmail.com","email_verified":true,"created":"2021-04-12T02:31:23.562Z","updated":"2021-04-12T02:31:23.559Z","cidr_whitelist":null}
+55 silly verifyNpmPackageAccess
+56 http fetch GET 200 https://registry.npmjs.org/-/org/prvn_ch/package?format=cli 396ms
+57 info Checking two-factor auth mode
+58 verbose Retrieving npm user profile
+59 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1046ms
+60 silly npm profile get received {"tfa":false,"name":"prvn_ch","email":"praveenking880@gmail.com","email_verified":true,"created":"2021-04-12T02:31:23.562Z","updated":"2021-04-12T02:31:23.559Z","cidr_whitelist":null}
+61 silly 2FA false
+62 warn ENOLICENSE Packages jseditorbook, @jseditorbook/local-api, and @jseditorbook/local-client are missing a license.
+62 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+62 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+63 silly getCurrentSHA
+64 verbose getCurrentSHA 420c1d19a536e1f34dd989ce8c381a7dabbf1d42
+65 silly lifecycle No script for "prepublish" in "root", continuing
+66 silly lifecycle No script for "prepare" in "root", continuing
+67 silly lifecycle No script for "prepublishOnly" in "root", continuing
+68 silly lifecycle No script for "prepack" in "root", continuing
+69 verbose pack-directory packages/local-client
+70 silly lifecycle No script for "prepublish" in "@jseditorbook/local-client", continuing
+71 silly lifecycle No script for "prepare" in "@jseditorbook/local-client", continuing
+72 silly lifecycle "prepublishOnly" starting in "@jseditorbook/local-client"
+73 info lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: @jseditorbook/local-client@2.1.0
+74 verbose lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: unsafe-perm in lifecycle true
+75 verbose lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: PATH: /usr/local/lib/node_modules/lerna/node_modules/npm-lifecycle/node-gyp-bin:/home/workspace/practise/mern/typescript/jbook/packages/local-client/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+76 verbose lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: CWD: /home/workspace/practise/mern/typescript/jbook/packages/local-client
+77 silly lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: Args: [ '-c', 'npm run build' ]
+78 silly lifecycle @jseditorbook/local-client@2.1.0~prepublishOnly: Returned: code: 0  signal: null
+79 silly lifecycle "prepublishOnly" finished in "@jseditorbook/local-client"
+80 silly lifecycle No script for "prepack" in "@jseditorbook/local-client", continuing
+81 error ZlibError: zlib: invalid literal/length code
+81 error     at Unzip.ZlibBase.(anonymous function).on.er (/usr/local/lib/node_modules/lerna/node_modules/minizlib/index.js:73:52)
+81 error     at Unzip.emit (events.js:203:15)
+81 error     at Zlib.zlibOnError [as onerror] (zlib.js:167:8)
+81 error     at processChunkSync (zlib.js:412:12)
+81 error     at Unzip.ZlibBase._processChunk (zlib.js:387:12)
+81 error     at Unzip.write (/usr/local/lib/node_modules/lerna/node_modules/minizlib/index.js:140:30)
+81 error     at Object.write (/usr/local/lib/node_modules/lerna/node_modules/tar/lib/parse.js:305:58)
+81 error     at Yallist.pipes.forEach.p (/usr/local/lib/node_modules/lerna/node_modules/minipass/index.js:374:18)
+81 error     at Yallist.forEach (/usr/local/lib/node_modules/lerna/node_modules/yallist/yallist.js:156:8)
+81 error     at ReadStream.emit (/usr/local/lib/node_modules/lerna/node_modules/minipass/index.js:373:20)
+81 error     at ReadStream.emit (/usr/local/lib/node_modules/lerna/node_modules/fs-minipass/index.js:154:22)
+81 error     at ReadStream.write (/usr/local/lib/node_modules/lerna/node_modules/minipass/index.js:163:17)
+81 error     at ReadStream.[_handleChunk] (/usr/local/lib/node_modules/lerna/node_modules/fs-minipass/index.js:131:19)
+81 error     at ReadStream.[_onread] (/usr/local/lib/node_modules/lerna/node_modules/fs-minipass/index.js:109:32)
+81 error     at fs.read (/usr/local/lib/node_modules/lerna/node_modules/fs-minipass/index.js:101:22)
